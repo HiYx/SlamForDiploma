@@ -1,5 +1,6 @@
-%% 粒子滤波的应用   
+%% 粒子滤波的应用测试过程   
 clear all    
+close all    
 close all    
 clc    
 %% initialize the variables    
