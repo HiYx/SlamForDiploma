@@ -1,21 +1,17 @@
 # 激光数据集合地址：
 https://google-cartographer-ros.readthedocs.io/en/latest/data.html
 
-# 将这个bag转包未mat的方式：
+## 将这个bag转包未mat的方式：
 
-## 在ROS 解压bag 保存为mat
-1、我下载了b2-2014-12-12-14-41-29.bag，文件大小为46MB;ps:下载后直接在matlab下用rosbag函数读取，会提示如下错误：
-
-
-在ROS 下
+### 在ROS 解压bag 保存为mat
+1、我下载了b2-2014-12-12-14-41-29.bag，文件大小为46MB;ps:下载后直接在matlab下用rosbag函数读取，会提示错误。在ROS 下解压
 ```
 rosbag decompress b2-2014-12-12-14-41-29.bag
 ```
-解压后文件大小为230M：
+解压后文件大小为460M：
 
 
-## 在matlab下对bag文件中的数据进行提取和保存
-
+### 在matlab下对bag文件中的数据进行提取和保存。
 
 matlab提供了ros相关的函数来提取数据，但是一次对所有的数据进行处理，会发生内存不足的问题。比如我用如下的代码读取bag文件：
 ```
@@ -29,7 +25,7 @@ matlab报错(内存不足)：
 
 
 ## 因此，采用循环的方式逐一读取数据，代码如下：
-
+花了10个小时，这个算法效率有点差.</br>
 
 版本一：
 ```
