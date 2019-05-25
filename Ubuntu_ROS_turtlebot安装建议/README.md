@@ -5,14 +5,14 @@ SLAM (simultaneous localization and mapping),也称为CML (Concurrent Mapping an
 
 准备
 ==
-#1、采用ros.iso 
+# 1、采用ros.iso 
 直接安装后就会有相应环境。下载地址：
 http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation
 
-#2、配置python环境，
+# 2、配置python环境，
 采用pyenv工具。（推荐使用本工具，方便管理多版本的python版本）
 
-#3、安装roboware studio。
+# 3、安装roboware studio。
 可以用来方便写代码。
 
 - 备注：安装roboware环境，需要：pip，以及pylint。不会报错的方法是。
